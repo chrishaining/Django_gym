@@ -1,4 +1,4 @@
-<img src="/static/images/weightlifting.jpg" width="100%" height="100">
+<img src="/static/images/weightlifting.jpg" width="80%" height="200">
 
 
 # My Django Gym
