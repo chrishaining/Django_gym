@@ -1,10 +1,11 @@
-<img src="/static/images/weightlifting.jpg" width="80%" height="200">
+<img margin=10 src="/static/images/weightlifting.jpg" width="80%" height="200">
 
 
 # My Django Gym
 
-This is my first attempt at creating a gym app using Django. The scenario is an app that is used by members of gym staff to view and add members, sessions^ and instructors. There's also an admin facility that allows an admin-level user to edit and delete members, sessions and instructors.
-^ A session is the name used for a fitness class. I didn't use the word "class" in the app since it is a reserved word in Python.
+This is my first attempt at creating a gym app using Django. The scenario is an app that is used by members of gym staff to view and add members, sessions^ and instructors. There's also an admin facility that allows an admin-level user to edit and delete members, sessions and instructors. 
+
+^A session is the name used for a fitness class. I didn't use the word "class" in the app since it is a reserved word in Python.
 
 
 ## The main features I wanted to work on are:
