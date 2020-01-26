@@ -1,3 +1,6 @@
+<img src="/static/images/weightlifting.jpg" width="100%" height="100">
+
+
 # My Django Gym
 
 This is my first attempt at creating a gym app using Django. The scenario is an app that is used by members of gym staff to view and add members, sessions^ and instructors. There's also an admin facility that allows an admin-level user to edit and delete members, sessions and instructors.
@@ -26,5 +29,3 @@ This is my first attempt at creating a gym app using Django. The scenario is an 
 * To run the app: `python manage.py runserver`. Use the local port advised in the script.
 * To gain access to the admin function, create a user from the command line: `python manage.py createsuperuser`
 
-
-<img src="/static/images/weightlifting.jpg" width="200" height="100">
