@@ -11,6 +11,10 @@
     color: white
 }
 
+.row {
+    margin: 20px
+}
+
 table {
     padding-left: 20px;
     color: #003399
