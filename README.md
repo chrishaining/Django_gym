@@ -25,3 +25,6 @@ This is my first attempt at creating a gym app using Django. The scenario is an 
 * Populate the database: `python manage.py loaddata seeds.json`
 * To run the app: `python manage.py runserver`. Use the local port advised in the script.
 * To gain access to the admin function, create a user from the command line: `python manage.py createsuperuser`
+
+
+<img src="/static/images/weightlifting.jpg" width="200" height="100">
