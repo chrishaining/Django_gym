@@ -7,6 +7,12 @@
     background-image: url("/static/images/weightlifting.jpg")
 }
 
+.navbar-toggler-icon {
+    color: white;
+    padding-left: 20px;
+    font-size: 200%
+  } 
+
 .navbar-brand {
     color: white
 }
