@@ -1,28 +1,42 @@
 {% extends "base.html" %}
 
-
 <div class="container-fluid">
-		{% block content %}
+	{% block content %}
 	<div class="row">
 		<div class="col-sm-3">
-			<h1>Members</h1>
-			{% for member in members %}
-			<li>{{ member.first_name }} {{ member.last_name }}</li>
-			{% endfor %}
+			<div class="table table-dark table-striped">
+				<table>
+					<th>Members</th>
+					{% for member in members %}
+					<tr>
+						<td>{{ member.first_name }} {{ member.last_name }}</td>
+					</tr>
+					{% endfor %}
+				</table>
+			</div>
 		</div>
 
 		<div class="col-sm-3">
-			<h1>Sessions</h1>
-			{% for session in sessions %}
-			<li>{{ session.title }}</li>
-			{% endfor %}
-		</div>
-		<div class="col-sm-3">
-				<h1>Instructors</h1>
-				{% for instructor in instructors %}
-				<li>{{ instructor.first_name}} {{ instructor.last_name }}</li>
+			<table>
+				<th>Sessions</th>
+				{% for session in sessions %}
+				<tr>
+					<td>{{ session.title }}</td>
+				</tr>
 				{% endfor %}
-			</div>
+			</table>
+		</div>
+
+		<div class="col-sm-3">
+			<table>
+				<th>Instructors</th>
+				{% for instructor in instructors %}
+				<tr>
+					<td>{{ instructor.first_name}} {{ instructor.last_name }}</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
 	</div>
 	{% endblock %}
 </div>
