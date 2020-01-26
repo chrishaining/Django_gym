@@ -19,7 +19,9 @@
 		</div>
 		<div class="col-sm-3">
 				<h1>Instructors</h1>
-				<li>I'm an placeholder instructor</li>
+				{% for instructor in instructors %}
+				<li>{{ instructor.first_name}} {{ instructor.last_name }}</li>
+				{% endfor %}
 			</div>
 	</div>
 	{% endblock %}

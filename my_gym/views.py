@@ -3,12 +3,14 @@ from django.http import HttpResponse
 from my_gym.models import *
 from .forms import MemberForm 
 from .forms import SessionForm 
+from .forms import InstructorForm 
 
 # Create your views here.
 
 def index(request):
     members = Member.objects.all()
     sessions = Session.objects.all()
+    instructors = Instructor.objects.all()
     return render(request, "my_gym/index.html", locals())
 
 def member_new(request):
@@ -33,3 +35,13 @@ def session_new(request):
         form = SessionForm()
         return render(request, 'my_gym/session_form.html', {'form': form})
 
+def instructor_new(request):
+    if request.method == "POST":
+        form = InstructorForm(request.POST)
+        if form.is_valid():
+            instructor = form.save(commit=False)
+            instructor.save()
+            return redirect('index') 
+    else:
+        form = InstructorForm()
+        return render(request, 'my_gym/instructor_form.html', {'form': form})

@@ -13,3 +13,9 @@ class SessionForm(forms.ModelForm):
     class Meta:
         model = Session
         fields = ('title', 'instructor')
+
+class InstructorForm(forms.ModelForm):
+    # instructor = forms.ModelChoiceField(Instructor.objects.all())
+    class Meta:
+        model = Instructor
+        fields = ('first_name', 'last_name')
