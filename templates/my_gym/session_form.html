@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="form-holder">
+    <h2>New Session</h2>
+    <form method="POST" class="my_gym-form">
+        {% csrf_token %}
+        <div class="form-group">
+            <span class="form-input">{{ form.as_p }}</span>
+        </div>
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+</div>
+{% endblock %}

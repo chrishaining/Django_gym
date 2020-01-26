@@ -1,16 +1,26 @@
 {% extends "base.html" %}
 
-{% block content %}
-<div class="list">
-<h1>Members</h1>
-{% for member in members %}
-<h2>{{ member.first_name }} {{ member.last_name }}</h2>
 
-<!-- <ul>
-			{% for member in instructor.session_set.all %}
-				<li>{{ session.title }}</li>
+<div class="container-fluid">
+		{% block content %}
+	<div class="row">
+		<div class="col-sm-3">
+			<h1>Members</h1>
+			{% for member in members %}
+			<li>{{ member.first_name }} {{ member.last_name }}</li>
 			{% endfor %}
-		</ul> -->
-{% endfor %}
+		</div>
+
+		<div class="col-sm-3">
+			<h1>Sessions</h1>
+			{% for session in sessions %}
+			<li>{{ session.title }}</li>
+			{% endfor %}
+		</div>
+		<div class="col-sm-3">
+				<h1>Instructors</h1>
+				<li>I'm an placeholder instructor</li>
+			</div>
+	</div>
+	{% endblock %}
 </div>
-{% endblock %}

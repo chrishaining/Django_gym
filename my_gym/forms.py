@@ -7,3 +7,9 @@ class MemberForm(forms.ModelForm):
     class Meta:
         model = Member
         fields = ('first_name', 'last_name')
+
+class SessionForm(forms.ModelForm):
+    # session = forms.ModelChoiceField(Session.objects.all())
+    class Meta:
+        model = Session
+        fields = ('title', 'instructor')
