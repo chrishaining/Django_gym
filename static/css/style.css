@@ -1,3 +1,31 @@
-body {
-    background-color: blue
+.header {
+    background-color: #003399
+}
+
+.body {
+    color: #003399
+}
+
+.navbar-brand {
+    color: white
+}
+
+.list {
+    padding-left: 20px;
+    color: #003399
+}
+
+.form-holder {
+    color: white;
+    background-color: #003399;
+    padding: 20px;
+    margin-top: 50px
+}
+
+.form-input {
+    color: black
+}
+
+h1 h2 {
+    color: #003399
 }

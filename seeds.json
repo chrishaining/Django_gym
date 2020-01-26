@@ -1,0 +1,52 @@
+[
+    {
+        "model": "my_gym.Member",
+        "fields": {
+            "first_name": "Jan",
+            "last_name": "Petersen"
+        }
+    },
+    {
+        "model": "my_gym.Member",
+        "fields": {
+            "first_name": "Sue",
+            "last_name": "Landers"
+        }
+    },
+    {
+        "model": "my_gym.Member",
+        "fields": {
+            "first_name": "Kira",
+            "last_name": "Plofark"
+        }
+    },
+    {
+        "model": "my_gym.Member",
+        "fields": {
+            "first_name": "Jan",
+            "last_name": "Khan"
+        }
+    },
+    {
+        "model": "my_gym.Instructor",
+        "fields": {
+            "first_name": "Rory",
+            "last_name": "Agar"
+        }
+    },
+    {
+        "model": "my_gym.Instructor",
+        "fields": {
+            "first_name": "Candice",
+            "last_name": "Swan"
+        }
+    },
+    {
+        "model": "my_gym.Instructor",
+        "fields": {
+            "first_name": "Polka",
+            "last_name": "Janssen"
+        }
+    }
+
+]
